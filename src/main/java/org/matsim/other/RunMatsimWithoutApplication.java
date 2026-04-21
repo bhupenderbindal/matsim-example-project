@@ -18,6 +18,7 @@
  * *********************************************************************** */
 package org.matsim.other;
 
+import org.matsim.api.core.v01.Id;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigUtils;
@@ -51,6 +52,8 @@ public class RunMatsimWithoutApplication {
 		// possibly modify scenario here
 		
 		// ---
+		// Link link = scenario.getNetwork().getLinks().get(Id.createLinkId("2"));
+		// scenario.getNetwork().getLinks().get(3).setFreespeed(87);
 		
 		Controler controler = new Controler( scenario ) ;
 		
